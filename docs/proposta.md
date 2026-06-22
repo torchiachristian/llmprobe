@@ -62,5 +62,6 @@ FASI
 
 Non abbiamo ancora una scansione specifica, io ed il mio collega Enrico affineremo la programmazione dopo l'approvazione del progetto.
 La direzione potrebbe essere: partiamo costruendo il modello locale e la classe Client, testando il canale di comunicazione. Poi, in ordine, implementiamo la classe base Probe e un attacco per vedere se la catena payload-client-esito-stampa funziona; verso metà progetto puntiamo ad avere i 4 attacchi; infine creiamo il Runner e i test pytest.
+Fonte e ispirazione parziale: https://github.com/NVIDIA/garak
 
 Restiamo in attesa di conferme o modifiche.
