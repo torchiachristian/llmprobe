@@ -1,4 +1,5 @@
 #-struttura comando da terminale per testare llm:
+
 curl -s http://localhost:XX/api/chat -d '{
   "model": "MODELLO",
   "stream": false,
@@ -7,6 +8,7 @@ curl -s http://localhost:XX/api/chat -d '{
     {"role": "user", "content": "PROMPT MALEVOLO"}
   ]
 }' | python3 -c "import sys,json; print(json.load(sys.stdin)['message']['content'])"
+
 
 #-esiti dei test su llama3.2:1b
 
