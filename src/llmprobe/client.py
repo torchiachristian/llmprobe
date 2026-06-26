@@ -28,13 +28,13 @@ class Client:
             "messages": [{"role": "system", "content": self.system_prompt}, {"role": "user", "content": payload}]
         }
 #blocco try-except per gestire errori di rete. se modello irraggiungibile per qualsiasi motivo, programma non crasha ma restituisce None
-    try:
-        response = requests.post(self.endpoint, json=dati)
-        risposta = response.json()
-        return risposta["message"]["content"]
-    except Exception as e:
-        print(f"Errore durante l'invio della richiesta: {e}")
-        return None
+        try:
+            response = requests.post(self.endpoint, json=dati)
+            risposta = response.json()
+            return risposta["message"]["content"]
+        except Exception as e:
+            print(f"Errore durante l'invio della richiesta: {e}")
+            return None
 
 
 
