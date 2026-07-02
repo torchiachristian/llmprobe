@@ -4,7 +4,7 @@
 #debba sapere quale delle tre sottoclassi stia utilizzando
 
 #Proprio per questo motivo, ossia la dipendenza delle sottoclassi probe
-#rispetto alla classe esito, che quest'ultima viene definita per prima
+#rispetto alla classe esito, che quest'ultima viene definita per prima 
 
 class Esito:
 
