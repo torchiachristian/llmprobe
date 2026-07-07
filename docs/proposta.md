@@ -65,4 +65,3 @@ La direzione potrebbe essere: partiamo costruendo il modello locale e la classe 
 
 Fonte e ispirazione parziale: https://github.com/NVIDIA/garak  ,  https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/Prompt%20Injection  
 
-Restiamo in attesa di conferme o modifiche.

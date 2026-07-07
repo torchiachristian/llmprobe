@@ -1,7 +1,8 @@
 # Devlog
 
-> Diario di bordo del gruppo. **Una entry a settimana** (minimo tre nel corso del progetto),
+> Richiesta: Diario di bordo del gruppo. **Una entry a settimana** (minimo tre nel corso del progetto),
 > 15-30 righe l'una, in prima persona plurale, **scritte da voi** (non dall'IA).
+
 
 ## Come si scrive
 
@@ -26,15 +27,21 @@ Ogni entry dovrebbe toccare almeno tre di questi punti:
 ### Settimana 1 — [date]
 
 _Scrivete qui._
+-CODICE SVILUPPATO, SCAFFOLDING ANCORA NON SVILUPPATO A PIENO --> SEZIONE Devlog NON IMPORTATA SU VScode, SEZIONE Devlog IGNORATA-->ENTRY INESISTENTE
+
+-Entry postuma: 
 
 ### Settimana 2 — [date]
 
 _Scrivete qui._
+-CODICE SVILUPPATO, SCAFFOLDING ANCORA NON SVILUPPATO A PIENO --> SEZIONE Devlog NON IMPORTATA SU VScode, SEZIONE Devlog IGNORATA-->ENTRY INESISTENTE
+
+-Entry postuma:
 
 ### Settimana 3 — [date]
 
 _Scrivete qui._
-
+- Entry:
 ---
 
 ## Bilancio finale
@@ -43,3 +50,5 @@ Alla consegna, una entry di bilancio (30-50 righe). Spunti: di cosa siete più s
 cosa avete capito di nuovo, cosa avete sottovalutato all'inizio, cosa rifareste diversamente,
 se la divisione del lavoro è stata equa, cosa avreste aggiunto con un'altra settimana, e —
 onestamente — che voto dareste al vostro progetto e perché.
+
+-Entry di bilancio: 

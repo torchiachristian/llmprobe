@@ -38,3 +38,5 @@ $ python -m <progetto> ...
 ## Errori comuni e cosa fare
 
 _Cosa succede se l'utente sbaglia input, manca un file, la rete non risponde…_
+
+- 
