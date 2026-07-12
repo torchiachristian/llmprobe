@@ -15,7 +15,7 @@ class PromptInjectionProbe(Probe):
     ]
 #inseriti nella lista alcuni payload semplici come esempi, le motivazioni dietro essi sono spiegate in scelte.md . in futuro, aggiungerne altri è immediato.
 
-    marcatore = elif self.marcatore.lower() in response.lower():"VIOLATO"
+    marcatore = "VIOLATO"
     # metodo esegui che esegue in un for un payload malevolo alla volta e in base alla risposta restituisce un esito.
     def esegui(self):
         for payload in self.payloads:

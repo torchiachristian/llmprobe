@@ -5,7 +5,7 @@ from abc import ABC, abstractmethod
 #classe Probe con parametri client e nome. agiscono come due tasche, una manda il payload e la seconda etichetta un esito
 #ogni attacco ha un client, un nome, e un metodo esegui(). questa classe non fa niente da sola, obbliga solo le sottoclassi a esistere con quella forma precisa 
 class Probe(ABC):
-    def __init__(self, client, nome:
+    def __init__(self, client, nome):
         self.client = client
         self.nome = nome
 
