@@ -1,3 +1,4 @@
+# Proposta iniziale
 Gruppo: Torchia Christian, D'Onofrio Enrico
 Nome del programma: llmprobe
 
@@ -65,3 +66,4 @@ La direzione potrebbe essere: partiamo costruendo il modello locale e la classe 
 
 Fonte e ispirazione parziale: https://github.com/NVIDIA/garak  ,  https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/Prompt%20Injection  
 
+## Proposta accettata dal docente M.Farina il 29/06

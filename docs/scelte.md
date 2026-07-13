@@ -24,10 +24,26 @@
 
 - Il payload lo abbiamo passato come attributo standard della classe, non nell'init perchè la lista è uguale per ogni probe di quel tipo non va passata da fuori ad ogni oggetto
 
-- Severità è un attributo che abbiamo messo fuori dall' init in Esito per lo stesso motivo della scelta precedente. è un etichetta fissa, es. EsitoVulnerabile è sempre Severità=VULNERABILE . 
+- Severità è un attributo che abbiamo messo fuori dall' init in Esito per lo stesso motivo della scelta precedente. è un etichetta fissa, es. EsitoVulnerabile è sempre Severità=VULNERABILE  . 
 
-- In metodo esegui() prima si controlla il None e poi il marcatore e non viceversa. se controllo prima il marcatore e la risposta per caso è None, python crasha.
+- In metodo esegui() prima si controlla il None e poi il marcatore e non viceversa. se controllo prima il marcatore e la risposta per caso è None, python crasha
 
+-Probe è una classe astratta e non una classe normale perché non deve mai essere usata da sola. serve solo come contratto che obbliga ogni sottoclasse a scrivere il proprio metodo esegui.Se qualcuno prova a usare Probe direttamente Python lo blocca ed è proprio quello che era voluto.
+
+-Abbiamo usato ereditarietà e non semplici funzioni o composizione perché i quattro attacchi condividono lo stesso identico scheletro. tutti prendono un client, mandano payload, leggono la risposta, la giudicano e restituiscono un solo esito.Cambia solo la lista di payload oppure il marcatore. con una classe base scriviamo lo scheletro una volta sola e ad ogni attacco aggiunge solo la sua parte. 
+
+- Ogni sottoclasse Probe ha una sua LISTA di payload e un suo marcatore diverso. il marcatore è soltanto una parola spia che cerchiamo nella risposta per capire se l'attacco è riuscito. ogni categoria ha il suo per esempio BASILISK per il leak, VIOLATO per la injection, ROOT123 per il policy bypass, SBLOCCATO per il jailbreak.
+
+- Nel giudizio confrontiamo marcatore + risposta entrambi in minuscolo con lower. scoperto testando MANUALMENTE perché il modello a volte scrive BASILISK e altre volte Basilisk o basilisk. senza normalizzare il case ci saremmo persi dei leak veri solo per una maiuscola
+
+- ogni attacco prova più di un payload e non uno solo sempre per quello che abbiamo visto nei test manuali. il payload diretto quasi sempre fallisce ma quello obliquo passa. Quindi provare più varianti e fermarsi alla prima che buca è molto più realistico di un colpo solo
+
+- Il Runner riceve il client dalla CLI e non lo crea mai da solo. questo perché endpoint, modello e system prompt sono scelte che DEVE fare l'utente e cambiano ad ogni uso quindi è la CLI a leggerli e passarli. 
+Il Runner riceve un client già pronto e lo usa senza sapere da dove viene .
+
+- Il polimorfismo del progetto sta interamente nel Runner perchè chiama 'esegui' su ogni probe e 'descrivi' su ogni esito senza sapere quale tipo concreto ha davanti. ogni oggetto risponde a modo suo. È lo stesso motivo per cui abbiamo diviso il codice in tante classi invece di un unico blocco in fondo
+
+- Abbiamo usato Argparse nel main per non avere endpoint e modello come dati fissi nel codice,  cosi lo stesso tool si lancia su qualsiasi modello cambiando solo gli argomenti da riga di comando, senza toccare il codice
 ---------------------------------------------------
 
 # Schematizzazione di Client.py:

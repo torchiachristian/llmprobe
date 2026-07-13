@@ -8,8 +8,7 @@ from .policy_bypass_probe import PolicyBypassProbe
 #crea inoltre una lista dei probe ben costruita
 
 class Runner:
-    """Runner that executes a set of probes against a client."""
-
+    
     def __init__(self, client):
         self.client = client
         self.probes = [
