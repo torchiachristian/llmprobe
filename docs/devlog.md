@@ -39,7 +39,9 @@ _Scrivete qui._
 ### Settimana 3 — [date]
 
 _Scrivete qui._
-- Entry: Nonostante ci troviamo alla terza settimana di progetto, e che per via dello Scaffolding tardivo non sia stato possibile rendicontare le prime settimane, tramite note e elementi condivisi tra noi (Enrico e Christian), è possibile avere ogni entry/fatto da raccontare in ordine.
+- Entry: 
+
+Nonostante ci troviamo alla terza settimana di progetto, e che per via dello Scaffolding tardivo non sia stato possibile rendicontare le prime settimane, tramite note e elementi condivisi tra noi (Enrico e Christian), è possibile avere ogni entry/fatto da raccontare in ordine.
 
 Nella prima settimana la proposta è stata scritta e approvata dal professore con estrema convinzione. La nostra idea originale, semplice e piena di use cases è risultata ottima. Installato Ollama llama 3.2:1b e fatti primi test manuali con curl e payload è stato impressionante vedere il modello rispondere in modi diversi ogni volta, ciò rende possibile creare un programma pieno di risultati vari e originali. I payload però fallivano davvero troppe volte e risultavano banali inviati da soli, quindi li abbiamo accoppiati ad un marcatore come una parola specifica che il modello non doveva dire per giudicare in modo deterministico se l'attacco è riuscito. Nonoostante alcune conoscenze fossero ottime per via di unità formative scolastiche propedeutiche mancavano ad entrambi nozioni vere per la parte di security e networking legata alla gerarchia. Come 'parlare' con un endpoint di un'AI, come gestire il traffico HTTP (anche se si è rivelato banale), e come imbastire le classi che svolgono le operazioni più insidiose. Per colmare queste lacune prima di progettare e per una profonda supervisione dell'esecuzione è venuto in aiuto un chatbot efficiente. 
 Verso la seconda settimana abbiamo rapidamente costruito un Client. La principale difficoltà è stata per Christian comprendere in che formato preciso JSON Ollama vuole i dati e come scrivere una formattazione simile in python. A classe ultimata, il chatbot ha suggerito un try/except molto utile e spiegato in scelte.md . 
@@ -61,3 +63,12 @@ se la divisione del lavoro è stata equa, cosa avreste aggiunto con un'altra set
 onestamente — che voto dareste al vostro progetto e perché.
 
 -Entry di bilancio: 
+
+Siamo fortemente soddisfatti del progetto, soprattutto del fatto che potrà finire nei nostri curriculum. per ora è ancora un progetto didattico ed embrionale ma è scalabile, con il tempo può diventare un asset importante e non un semplice esercizio del corso. 
+Siamo contenti anche dell'impegno costante giorno per giorno, dell'aver avuto la costanza di committare e di dedicarci al progetto senza mollarlo a metà o fare tutto all'ultimo .
+la cosa che abbiamo sottovalutato di più è quanto sia difficile gestire un progetto con così tante classi. Non tanto scriverle, quanto tenerle tutte nella nostra memoria contemporaneamente. Per esempio studi bene la classe che stai facendo ora e la capisci a fondo, ma poi passi a quella dopo e la prima la ricordi già un po' meno, arrivi alla terza e la primissima la ricordi ancora meno e cosi via. Quando ti ritrovi con quindici classi le prime che hai fatto le hai praticamente dimenticate nel loro funzionamento. Ora non saprei nominarti a memoria tutti i metodi di Client.py che è stata la primissima classe, ma se me la studio cinque minuti riaffiora tutto e ho una profonda conosocenza di essa. 
+
+Abbiamo anche sottovalutato la fatica di lavorare da due pc diversi, con due modelli di Ai a supervisionare diversi e con etiche di lavoro diverse.
+sulla divisione del lavoro: Non è stata equa in senso strettamente numerico e matematico, ma come impegno si. C'è stato chi ha lavorato più sul piano concettuale, con idee e micro soluzioni geniali, e chi più scrivendo codice a mano.
+Con più tempo aggiungeremmo sicuramente la compatibilità con molti più modelli di Ai locali e non, ma è un lavoro lungo e dispendioso. Vorremmo tantissimi nuovi prompt e attacchi, cosa che sarebbe possibile solo se lavorasse con noi un esperto di prompt engineering o un pentester.
+Come valutazione ci daremmo un 8/10. La struttura è solida, l'idea è perfetta per il nostro giudizio, lo svolgimento è stato molto buono, la documentazione è buona ma migliorabile, e ci sono altre piccolezze che si potevano curare meglio, per non parlare di bug minori che sicuramente un tester esperto noterà probabilmente. Però il sudore e  la fatica nostre ci sono tutti e siamo fieri di questo
