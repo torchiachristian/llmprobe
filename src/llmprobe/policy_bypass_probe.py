@@ -1,5 +1,5 @@
 #Dopo aver clonato la struttura delle classi probe precedentemente create
-#sono stati sostituiti i payloads per adattarsi agli attacchi jailbreak
+#sono stati sostituiti i payloads per adattarsi agli attacchi policy bypass
 #della seguente classe
 
 from .probe import Probe

@@ -29,14 +29,12 @@ Ogni entry dovrebbe toccare almeno tre di questi punti:
 _Scrivete qui._
 -CODICE SVILUPPATO, SCAFFOLDING ANCORA NON SVILUPPATO A PIENO --> SEZIONE Devlog NON IMPORTATA SU VScode, SEZIONE Devlog IGNORATA-->ENTRY INESISTENTE
 
--Entry postuma: 
 
 ### Settimana 2 — [date]
 
 _Scrivete qui._
 -CODICE SVILUPPATO, SCAFFOLDING ANCORA NON SVILUPPATO A PIENO --> SEZIONE Devlog NON IMPORTATA SU VScode, SEZIONE Devlog IGNORATA-->ENTRY INESISTENTE
 
--Entry postuma:
 
 ### Settimana 3 — [date]
 
