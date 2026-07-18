@@ -23,6 +23,7 @@ $ pip install -r requirements.txt
 Successfully installed Pygments-2.20.0 certifi-2026.6.17 charset-normalizer-3.4.7 idna-3.18 iniconfig-2.3.0 packaging-26.2 pluggy-1.6.0 pytest-9.1.1 requests-2.34.2 urllib3-2.7.0
 
 $ pytest
+
 ============================= test session starts ==============================
 platform linux -- Python 3.11, pytest-9.1.1, pluggy-1.6.0
 rootdir: /tmp/test_prof/llmprobe
