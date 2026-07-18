@@ -21,7 +21,18 @@ python -m venv .venv && source .venv/bin/activate   # consigliato
 pip install -r requirements.txt
 ```
 
+## Prerequisito: Ollama
+
+Il nostro tool testa un modello servito localmente. Prima di lanciarlo:
+
+1. Installa Ollama da https://ollama.com
+2. Scarica e avvia un modello:
+ollama pull llama3.2:1b
+3. Verifica che sia attivo: `ollama list`
+
 Richiede **Python 3.11+**. E un modello locale servito via Ollama (es. llama3.2:1b)
+
+llmprobe testa qualsiasi endpoint che parli il formato OpenAI / Ollama (che usi messaggi role/content)
 
 
 ## Come si usa
